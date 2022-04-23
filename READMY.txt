@@ -57,7 +57,7 @@
 
         EntityInit.ENTITIES.register(eventBus);
 
-4. Создаём регистрацию event (registerAttributes) для нашего моба (ExampleEntity)
+4. Создаём регистрацию в core.event (registerAttributes) для нашего моба (ExampleEntity)
             ОБЯЗАТЕЛЬНО.
 
             Код:

@@ -8,6 +8,8 @@ import net.minecraft.world.entity.Entity;
 import net.pilto.tutorialmod.common.entity.ExampleEntity;
 import net.pilto.tutorialmod.tutorialmod;
 
+//Тут указывается локация ресурсов для конкретного существа
+
 public class ExampleEntityRenderer<Type extends ExampleEntity> extends MobRenderer<Type, ExampleEntityModel<Type>> {
 
     private static final ResourceLocation TEXTURE = new ResourceLocation(tutorialmod.MOD_ID, "textures/entities/example_entity.png");

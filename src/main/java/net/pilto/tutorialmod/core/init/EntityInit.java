@@ -10,6 +10,7 @@ import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.pilto.tutorialmod.common.entity.ExampleEntity;
+import net.pilto.tutorialmod.common.entity.FirstEntity;
 import net.pilto.tutorialmod.tutorialmod;
 
 public class EntityInit {
@@ -22,4 +23,8 @@ public class EntityInit {
     public static final RegistryObject<EntityType<ExampleEntity>> EXAMPLE_ENTITY = ENTITIES.register("example_entity",
             () -> EntityType.Builder.of(ExampleEntity::new, MobCategory.CREATURE).sized(2f,2f)
                     .build(new ResourceLocation(tutorialmod.MOD_ID, "example_entity").toString()));
+
+    public static final RegistryObject<EntityType<FirstEntity>> FIRST_ENTITY = ENTITIES.register("first_entity",
+            () -> EntityType.Builder.of(FirstEntity::new, MobCategory.MONSTER).sized(2f,2f)
+                    .build(new ResourceLocation(tutorialmod.MOD_ID, "first_entity").toString()));
 }
