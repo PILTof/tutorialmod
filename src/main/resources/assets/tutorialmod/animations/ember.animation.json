@@ -1,0 +1,329 @@
+{
+	"animation.ember.idle": {
+		"length": 2,
+		"parts": {
+			"body": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [12.5, 32.5, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [12.5, 32.5, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				],
+				"position": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [1, -1, 1]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [1, -2, 1]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [1, -1, 1]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"head": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [25, -27.5, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [25, -27.5, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"left_arm": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [0, -15, -10]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [-5, -10, -10]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [0, -15, -10]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"bone19": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [-20, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [-17.5, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [-20, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"right_arm": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [6.23235, 7.52076, 18.58597]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [5.5526, 8.0344, 13.5662]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [6.23235, 7.52076, 18.58597]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"bone": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [-27.5, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [-22.5, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [-27.5, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"left_leg": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [-39.57875, -42.09871, 2.50775]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [-47.07875, -42.09871, 2.50775]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [-39.57875, -42.09871, 2.50775]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"bone21": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [25, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [55, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [25, 0, 0]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"right_leg": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [-25.65392, 36.5115, 15.18682]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [-35.65392, 36.5115, 15.18682]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [-25.65392, 36.5115, 15.18682]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			},
+			"bone20": {
+				"rotation": [
+					{
+						"time": 0,
+						"transform": {
+							"vector": [29.62165, 4.98093, -8.6822]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 1,
+						"transform": {
+							"vector": [49.62165, 4.98093, -8.6822]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					},
+					{
+						"time": 2,
+						"transform": {
+							"vector": [29.62165, 4.98093, -8.6822]
+						},
+						"interpolation": {
+							"type": "linear"
+						}
+					}
+				]
+			}
+		}
+	},
+	"animation.ember.walk": {}
+}
