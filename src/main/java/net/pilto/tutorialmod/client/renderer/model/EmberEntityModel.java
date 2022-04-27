@@ -10,17 +10,17 @@ public class EmberEntityModel extends AnimatedGeoModel<EmberEntity> {
 
     @Override
     public ResourceLocation getAnimationFileLocation(EmberEntity animatable) {
-        return new ResourceLocation(tutorialmod.MOD_ID, "animations/model.animation.json");
+        return new ResourceLocation(tutorialmod.MOD_ID, "animations/ember/ember.animation.json");
     }
 
     @Override
     public ResourceLocation getModelLocation(EmberEntity object) {
 
-        return new ResourceLocation(tutorialmod.MOD_ID, "geo/pup.geo.json");
+        return new ResourceLocation(tutorialmod.MOD_ID, "geo/ember.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureLocation(EmberEntity object) {
-        return new ResourceLocation(tutorialmod.MOD_ID, "textures/entities/pup.png");
+        return new ResourceLocation(tutorialmod.MOD_ID, "textures/entities/ember_geo_entity.png");
     }
 }

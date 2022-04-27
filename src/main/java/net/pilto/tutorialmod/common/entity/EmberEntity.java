@@ -28,11 +28,12 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class EmberEntity extends Monster {
+public class EmberEntity extends Monster implements IAnimatable {
 
 
     public EmberEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
+        this.noCulling = true;
     }
 
 
@@ -57,7 +58,27 @@ public class EmberEntity extends Monster {
         return Monster.createMonsterAttributes().add(Attributes.FOLLOW_RANGE, 35.0D).add(Attributes.MOVEMENT_SPEED, (double)0.23F).add(Attributes.ATTACK_DAMAGE, 3.0D).add(Attributes.ARMOR, 2.0D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
     }
 
+
+
     //geckolib thing
+
+    public AnimationFactory factory = new AnimationFactory(this);
+
+    private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ember.idle", true));
+        return PlayState.CONTINUE;
+    }
+
+    @Override
+    public void registerControllers(AnimationData data) {
+        data.addAnimationController(new AnimationController<EmberEntity>(this, "controller", 0, this::predicate));
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return this.factory;
+    }
+
 
 
 }
