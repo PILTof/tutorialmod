@@ -23,7 +23,7 @@ public class EntityInit {
                     .build(new ResourceLocation(tutorialmod.MOD_ID, "first_entity").toString()));
 
     public static final RegistryObject<EntityType<EmberEntity>> EMBER_ENTITY = ENTITIES.register("ember_entity",
-            () -> EntityType.Builder.of(EmberEntity::new, MobCategory.MONSTER).sized(2f,1f).
+            () -> EntityType.Builder.of(EmberEntity::new, MobCategory.CREATURE).sized(2f,1f).
                     build(new ResourceLocation(tutorialmod.MOD_ID, "ember_entity").toString()));
 
 }
