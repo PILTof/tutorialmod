@@ -1,12 +1,14 @@
 package net.pilto.tutorialmod;
 
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+//import net.pilto.tutorialmod.common.ai.entity.events.EmberEntityEvents;
+import net.pilto.tutorialmod.client.GUI.GuiEventHandler;
+import net.pilto.tutorialmod.common.ai.entity.events.EntitySpawnDeathEvent;
 import net.pilto.tutorialmod.core.init.EntityInit;
 import net.pilto.tutorialmod.core.init.ItemInit;
 import org.apache.logging.log4j.LogManager;
@@ -30,6 +32,14 @@ public class tutorialmod {
         ItemInit.register(eventBus);
 
         eventBus.addListener(this::setup);
+
+//        MinecraftForge.EVENT_BUS.addListener(EmberEntity::onAttack);
+        //TODO =    REGISTER events
+
+        eventBus.register(new GuiEventHandler());
+
+        EntitySpawnDeathEvent EntitySpawnDeathEvent = new EntitySpawnDeathEvent();
+        MinecraftForge.EVENT_BUS.register(EntitySpawnDeathEvent);
 
         EntityInit.ENTITIES.register(eventBus);
         
